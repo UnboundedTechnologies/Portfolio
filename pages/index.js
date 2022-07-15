@@ -17,7 +17,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import Image from 'next/image'
 
 import youtube from '../public/images/links/youtube.png'
@@ -150,6 +150,17 @@ const Home = () => (
                 leftIcon={<IoLogoGithub />}
               >
                 @UnboundedTechnologies
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.linkedin.com/in/said-aissani/" target="_blank" _hover={{ textDecoration: "none" }}>
+              <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoLinkedin />}
+              >
+                @said-aissani
               </Button>
             </Link>
           </ListItem>
