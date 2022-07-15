@@ -165,7 +165,7 @@ const Home = () => (
           <GridItem
             href="https://www.youtube.com/channel/UCiD7brqhCib5f2eJ3y_go_w"
             title="Kyto Beats"
-            thumbnail="/../public/images/links/youtube.png"
+            thumbnail="/images/links/youtube.png"
           >
             My YouTube channel
           </GridItem>
@@ -173,7 +173,7 @@ const Home = () => (
           <GridItem
             href="https://fatalis-dashboard.vercel.app/"
             title="Fatalis Dashboard"
-            thumbnail="/../public/images/projects/fatalisBG.png"
+            thumbnail="/images/projects/fatalisBG.png"
 
           >
             A dashboard to track, analyze, and display KPIs, metrics, and critical data points
