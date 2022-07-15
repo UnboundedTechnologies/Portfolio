@@ -3,9 +3,6 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbFatalis from "../../Portfolio/public/images/projects/fatalisBG.png"
-import thumbDripStore from "../../Portfolio/public/images/projects/dripstoreBG.png"
-
 const Projects = () => (
   <Layout title="Projects">
     <Container>
@@ -15,7 +12,7 @@ const Projects = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="fatalis" title="Fatalis Dashboard" thumbnail={thumbFatalis}>
+          <WorkGridItem id="fatalis" title="Fatalis Dashboard" thumbnail="/../public/images/projects/fatalisBG.png">
             A dashboard to track, analyze, and display KPIs, metrics, and critical data points.
           </WorkGridItem>
         </Section>
@@ -23,7 +20,7 @@ const Projects = () => (
           <WorkGridItem
             id="dripstore"
             title="Drip Store"
-            thumbnail={thumbDripStore}
+            thumbnail="/../public/images/projects/dripstoreBG.png"
           >
             An ecommerce platform to buy luxury watches powered by Sanity and Stripe
           </WorkGridItem>
