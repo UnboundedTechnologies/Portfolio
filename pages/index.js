@@ -80,15 +80,17 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Said is a freelance and a full-stack developer based in Paris with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. Currently, he is working on his last
-          product called{' '}
+          Saïd is a freelance and full-stack developer based in Paris with a passion for building digital services/products.
+          He loves to create and launch products, from planning and designing all the way to solving real-life problems with code.
+          Currently, he is working on his last product called{' '}
           <NextLink href="/projects/fatalis" passHref scroll={false}>
             <Link _hover={{ textDecoration: "none" }}>Fatalis Dashboard</Link>
           </NextLink>
-          . He publishes instrumentals on his YouTube
+          .
+        </Paragraph>
+        <Paragraph>
+          He is also a music producer working with several artists from around him in France and even with some people in the United States.
+          He publishes instrumentals on his YouTube
           channel called &quot;
           <NextLink href="https://www.youtube.com/channel/UCiD7brqhCib5f2eJ3y_go_w" passHref>
             <Link target="_blank" _hover={{ textDecoration: "none" }}>Kyto Beats</Link>
