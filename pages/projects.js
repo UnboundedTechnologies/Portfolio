@@ -12,7 +12,7 @@ const Projects = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="fatalis" title="Fatalis Dashboard" thumbnail="/images/links/fatalis.png">
+          <WorkGridItem id="fatalis" title="Fatalis Dashboard" thumbnail="/images/links/mountains.png">
             A dashboard to track, analyze, and display KPIs, metrics, and critical data points.
           </WorkGridItem>
         </Section>
@@ -20,7 +20,7 @@ const Projects = () => (
           <WorkGridItem
             id="dripstore"
             title="Drip Store"
-            thumbnail="/images/links/drip.png"
+            thumbnail="/images/links/mountains.png"
           >
             An ecommerce platform to buy luxury watches powered by Sanity and Stripe
           </WorkGridItem>
