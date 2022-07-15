@@ -78,6 +78,7 @@ const VoxelDog = () => {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
+        scene.scale.set(2, 2, 2),
         animate()
         setLoading(false)
       })
