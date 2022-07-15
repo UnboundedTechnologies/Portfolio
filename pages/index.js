@@ -20,6 +20,9 @@ import { GridItem } from '../components/grid-item'
 import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
 
+import youtube from '../public/images/links/youtube.png'
+import fatalis from '../public/images/projects/fatalis.png'
+
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
@@ -165,7 +168,7 @@ const Home = () => (
           <GridItem
             href="https://www.youtube.com/channel/UCiD7brqhCib5f2eJ3y_go_w"
             title="Kyto Beats"
-            thumbnail="/images/links/youtube.png"
+            thumbnail={youtube}
           >
             My YouTube channel
           </GridItem>
@@ -173,7 +176,7 @@ const Home = () => (
           <GridItem
             href="https://fatalis-dashboard.vercel.app/"
             title="Fatalis Dashboard"
-            thumbnail="/images/links/dashboardfatalis.png"
+            thumbnail={fatalis}
 
           >
             A dashboard to track, analyze, and display KPIs, metrics, and critical data points

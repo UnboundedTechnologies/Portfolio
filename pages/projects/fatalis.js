@@ -43,7 +43,7 @@ const Work = () => (
         </ListItem>
       </List>
 
-      <WorkImage src="/images/projects/fatalisBG.png" alt="Fatalis Dashboard" />
+      <WorkImage src="/images/projects/fatalis.png" alt="Fatalis Dashboard"/>
       <AspectRatio maxW="640px" ratio={1.7} my={4}>
         <iframe style={{borderRadius: '10px', overflow: 'hidden'}} src='https://my.spline.design/untitled-4138f01e18565fb3f31b027179cb06ec/' width='100%'
                 height='100%'></iframe>

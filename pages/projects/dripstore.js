@@ -54,8 +54,9 @@ const Work = () => (
         </ListItem>
       </List>
 
-      <WorkImage src="/images/projects/Sanity1.png" alt="Drip Store Website" />
-      <WorkImage src="/images/projects/Sanity2.png" alt="Drip Store's Sanity Manager" />
+      <WorkImage src="/images/projects/drip.png" alt="Drip Store Website" />
+      <WorkImage src="/images/projects/payment.png" alt="Drip Store's Stripe Integration" />
+      <WorkImage src="/images/projects/sanity.png" alt="Drip Store's Sanity Manager" />
 
     </Container>
   </Layout>
