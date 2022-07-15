@@ -131,9 +131,9 @@ const Home = () => (
           </Link>
           , Travel, {' '}
           <Link href="http://www.ffjudo.org/extranet/listehautgrades/liste_hauts_grades_dep.asp?Page=1&dis=0&grade=1&ndep=XX1177" target="_blank" _hover={{ textDecoration: "none" }}>
-            JUDO & JUJITSU
+            Judo and Jujitsu
           </Link> {' '}
-          (Search for my name in the JUDO and JUJITSU database)
+          (Search for my name in the Judo and Jujitsu database)
         </Paragraph>
       </Section>
 
