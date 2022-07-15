@@ -19,7 +19,7 @@ import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
-import thumbFatalis from '../public/images/projects/fatalis_bg.png'
+import thumbFatalis from '../public/images/projects/fatalisBG.png'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {

@@ -3,8 +3,8 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbFatalis from '../public/images/projects/fatalis_bg.png'
-import thumbDripStore from '../public/images/projects/dripstore_bg.png'
+import thumbFatalis from '../public/images/projects/fatalisBG.png'
+import thumbDripStore from '../public/images/projects/dripstoreBG.png'
 
 const Projects = () => (
   <Layout title="Projects">
