@@ -3,11 +3,7 @@ import {
   Badge,
   Link,
   List,
-  ListItem,
-  SimpleGrid,
-  UnorderedList,
-  Heading,
-  Center
+  ListItem
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -26,7 +22,7 @@ const Work = () => (
       <P>
         You will be able to buy luxury watches from from famous designers such as Rolex through {' '}
         <Link href="https://stripe.com/docs/api/versioning" target="_blank">
-          Stripe's API <ExternalLinkIcon mx="2px" />
+          Stripe&apos;s API <ExternalLinkIcon mx="2px" />
         </Link>.
       </P>
       <List ml={4} my={4}>
