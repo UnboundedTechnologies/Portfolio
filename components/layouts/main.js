@@ -19,7 +19,7 @@ const Main = ({ children, router }) => {
         <meta name="author" content="Saïd AISSANI" />
         <meta name="author" content="Unbounded Technologies" />
         <link rel="apple-touch-icon" href="../public/apple-touch-icon.png" />
-        <link rel="shortcut icon" href="/favicon.ico"/>
+
         <meta property="og:site_name" content="Saïd AISSANI" />
         <meta name="og:title" content="Saïd AISSANI" />
         <meta property="og:type" content="website" />
