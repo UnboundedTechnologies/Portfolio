@@ -6,9 +6,7 @@ export default class Document extends NextDocument {
   render() {
     return (
       <Html lang="en">
-        <Head>
-            <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        </Head>
+        <Head />
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
