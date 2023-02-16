@@ -16,7 +16,7 @@ const Projects = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem id="fatalis" title="Fatalis Dashboard" thumbnail={fatalis}>
-            A dashboard to track, analyze, and display KPIs, metrics, and critical data points.
+            A sample dashboard to track, analyze, and display KPIs, metrics, and critical data points.
           </WorkGridItem>
         </Section>
         <Section>
