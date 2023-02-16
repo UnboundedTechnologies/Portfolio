@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+import { BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem, GridBadge } from '../components/grid-item'
@@ -146,7 +146,7 @@ const Home = () => (
         </Paragraph>
 
         <Paragraph>
-          • Checking the stability of the company's network (Switches/Proxy)
+          • Checking the stability of the company&apos;s network (Switches/Proxy)
           <br /><br />
         </Paragraph>
 
