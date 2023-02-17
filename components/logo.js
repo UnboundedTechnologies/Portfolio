@@ -25,22 +25,22 @@ const Logo = () => {
   const KytoImg = `/images/kyto${useColorModeValue('', '-dark')}.png`
 
   return (
-    <Link href="/" scroll={false}>
-      <a>
-        <LogoBox>
-          <Image src={KytoImg} width={20} height={20} alt="logo" />
-          <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='M PLUS Rounded 1c", sans-serif'
-            fontWeight="bold"
-            ml={3}
-          >
-            Saïd AISSANI
-          </Text>
-        </LogoBox>
-      </a>
-    </Link>
-  )
+    (<Link href="/" scroll={false}>
+
+      <LogoBox>
+        <Image src={KytoImg} width={20} height={20} alt="logo" />
+        <Text
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          fontFamily='M PLUS Rounded 1c", sans-serif'
+          fontWeight="bold"
+          ml={3}
+        >
+          Saïd AISSANI
+        </Text>
+      </LogoBox>
+
+    </Link>)
+  );
 }
 
 export default Logo

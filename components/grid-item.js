@@ -47,7 +47,7 @@ export const GridBadge = ({ children, href, title, thumbnail }) => (
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
-    <NextLink href={`/projects/${id}`} passHref scroll={false}>
+    <NextLink href={`/projects/${id}`} passHref scroll={false} legacyBehavior>
       <LinkBox cursor="pointer">
         <Image
           src={thumbnail}

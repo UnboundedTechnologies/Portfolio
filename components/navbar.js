@@ -22,7 +22,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
-    <NextLink href={href} passHref scroll={false}>
+    <NextLink href={href} passHref scroll={false} legacyBehavior>
       <Link
         p={2}
         bg={active ? 'grassTeal' : undefined}
@@ -33,7 +33,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
         {children}
       </Link>
     </NextLink>
-  )
+  );
 }
 
 const Navbar = props => {
@@ -104,13 +104,13 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/" passHref>
+                <NextLink href="/" passHref legacyBehavior>
                   <MenuItem style={{borderRadius: '5px', overflow: 'hidden', color: 'black'}} _hover={{ textDecoration: "none" }} as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="/projects" passHref>
+                <NextLink href="/projects" passHref legacyBehavior>
                   <MenuItem style={{borderRadius: '5px', overflow: 'hidden', color: 'black'}} _hover={{ textDecoration: "none" }} as={Link}>Projects</MenuItem>
                 </NextLink>
-                <NextLink href="/beats" passHref>
+                <NextLink href="/beats" passHref legacyBehavior>
                   <MenuItem style={{borderRadius: '5px', overflow: 'hidden', color: 'black'}} _hover={{ textDecoration: "none" }} as={Link}>Beats</MenuItem>
                 </NextLink>
                 <MenuItem
@@ -127,7 +127,7 @@ const Navbar = props => {
         </Box>
       </Container>
     </Box>
-  )
+  );
 }
 
 export default Navbar
