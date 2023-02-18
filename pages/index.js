@@ -6,10 +6,11 @@ import {
   Box,
   SimpleGrid,
   Button,
+  useColorModeValue,
+  chakra, WrapItem, Wrap,
   List,
   ListItem,
-  useColorModeValue,
-  chakra, WrapItem, Wrap
+  UnorderedList,
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -41,7 +42,7 @@ const Home = () => (
             bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
             css={{ backdropFilter: 'blur(10px)' }}
         >
-          Hello, I&apos;m a full-stack developer based in Paris, France!
+          Hello, I&apos;m a full-stack engineer based in Paris, France!
         </Box>
 
         <Box display={{ md: 'flex' }}>
@@ -49,7 +50,7 @@ const Home = () => (
             <Heading as="h2" variant="page-title">
               Saïd AISSANI
             </Heading>
-            <p>Digital Creator ( Developer / Designer / Music Producer )</p>
+            <p>Engineer in Computer Science & 3D Applications<br/>( Developer / Designer / Music Producer )</p>
           </Box>
           <Box
               flexShrink={0}
@@ -82,17 +83,28 @@ const Home = () => (
           <Heading as="h3" variant="section-title" color='turquoise'>
             Summary
           </Heading>
+
           <Paragraph>
-            Saïd is a freelance and full-stack developer based in Paris with a passion for building digital services/products.
+            Saïd is a full-stack engineer based in Paris with a passion for building digital services/products.
             He loves to create and launch products, from planning and designing all the way to solving real-life problems with code.
-            <br /><br />
-            During his master’s degree at <BioYear>ESIEE Paris</BioYear> (French computer engineering school), he gained strong programming skills (Java, C/C#/C++, Python)
-            and academic knowledge in cyber-security, cloud computing and machine/deep learning.
-            <br /><br />
-            Trilingual Arabic-English-French, he is a fast learner and comfortable working in a team and self-directed settings.
             <br /><br />
           </Paragraph>
 
+          <Paragraph>
+            During his master’s degree at <BioYear>ESIEE Paris</BioYear> (French computer engineering school), he gained strong programming skills (Java, C/C#/C++, Python)
+            and academic knowledge in cyber-security, cloud computing and machine/deep learning.
+            <br /><br />
+          </Paragraph>
+
+          <Paragraph>
+            He completed a 3-year apprenticeship at Groupe Renault as a full-stack designer/developer in cloud computing.
+            <br/><br/>
+          </Paragraph>
+
+          <Paragraph>
+            Trilingual Arabic-English-French, he is a fast learner and comfortable working in a team and self-directed settings.
+            <br /><br />
+          </Paragraph>
 
           <Paragraph>
             He is also a music producer viewed by over 400k people.
@@ -102,7 +114,7 @@ const Home = () => (
                 href="https://www.youtube.com/channel/UCiD7brqhCib5f2eJ3y_go_w"
                 passHref
                 legacyBehavior>
-              <Link color='blue.500' target="_blank" _hover={{ textDecoration: "none" }}>Kyto Beats</Link>
+              <Link color="#36B5FF" target="_blank" _hover={{ textDecoration: "none" }}>Kyto Beats</Link>
             </NextLink>
             .
             <br /><br />
@@ -115,58 +127,83 @@ const Home = () => (
             Employment
           </Heading>
 
-          <Heading fontSize='20px' color='blue.500'>
+          <Heading fontSize='20px' color='#36B5FF'>
             Fullstack designer/developer in cloud computing
           </Heading>
           <Heading fontSize='20px' color='white'>- Groupe Renault<br /><br /></Heading>
 
           <BioYear>September 2020 - August 2023</BioYear>
-          <Paragraph>
-            • Application modelling by developing in java to adapt and optimise the user interfaces (UI) and the web service interface of the APIs
-          </Paragraph>
 
-          <Paragraph>
-            • Writing user stories and designing data models
-          </Paragraph>
+          <UnorderedList m={3} marginLeft={5}>
+            <ListItem p={1}>
+              Design and development of full-stack referentials (single point of truth applications) to adapt and optimise the user interfaces (UI) and the web service interface of the APIs
+            </ListItem>
 
-          <Paragraph>
-            • API design with the data consumers
-            <br /><br />
-          </Paragraph>
+            <ListItem p={1}>
+              Design, development and optimisation of REST APIs exposed in the company&apos;s API market (
+              <NextLink
+                  href="https://refservices.aws.renault.com/"
+                  passHref
+                  legacyBehavior>
+                <Link color='#36B5FF' target="_blank" _hover={{ textDecoration: "none" }}>Service Registry </Link>
+              </NextLink>&nbsp;- Renault Group).
+            </ListItem>
 
-          <Heading fontSize='20px' color='blue.500'>
+            <ListItem p={1}>
+              Design, modelling and development of data models and backends with data architects
+            </ListItem>
+
+            <ListItem p={1}>
+              Maintenance of repositories using DevOps tools (Gitlab, Docker,  Dynatrace, AWS, GCP..)
+              <br /><br />
+            </ListItem>
+          </UnorderedList>
+
+          <Heading fontSize='20px' color='#36B5FF'>
             Internship as part of the first year of the ESIEE preparatory course
           </Heading>
           <Heading fontSize='20px' color='white'>- ETBA Construction<br /><br /></Heading>
 
           <BioYear>July 2019</BioYear>
-          <Paragraph>
-            • Creation of a purchase order management platform
-          </Paragraph>
 
-          <Paragraph>
-            • Debugging the raw material ordering application
-          </Paragraph>
+          <UnorderedList m={3} marginLeft={5}>
+            <ListItem p={1}>
+              Design and development of a full-stack purchase order management platform
+            </ListItem>
 
-          <Paragraph>
-            • Checking the stability of the company&apos;s network (Switches/Proxy)
-            <br /><br />
-          </Paragraph>
+            <ListItem p={1}>
+              Maintenance of the raw material ordering application
+            </ListItem>
 
-          <Heading fontSize='20px' color='blue.500'>
+            <ListItem p={1}>
+              Maintenance of the stability of the company&apos;s network (Solarwind&apos;s&nbsp;
+              <NextLink
+                  href="https://www.solarwinds.com/en/network-bandwidth-analyzer-pack"
+                  passHref
+                  legacyBehavior>
+                <Link color='#36B5FF' target="_blank" _hover={{ textDecoration: "none" }}>Network Bandwidth Analyzer Pack</Link>
+              </NextLink>, Cisco Packet Tracer..)
+              <br /><br />
+            </ListItem>
+          </UnorderedList>
+
+          <Heading fontSize='20px' color='#36B5FF'>
             Observation internship
           </Heading>
           <Heading fontSize='20px' color='white'>- Lognes Town Hall<br /><br /></Heading>
 
           <BioYear>November 2014</BioYear>
-          <Paragraph>
-            • Learning about the different types of networks and cybersecurity
-          </Paragraph>
 
-          <Paragraph>
-            • Tests on a local network (Switches/Bridges/Subnetworks)
-            <br /><br />
-          </Paragraph>
+          <UnorderedList m={3} marginLeft={5}>
+            <ListItem p={1}>
+              Learn about the different types of networks and cybersecurity
+            </ListItem>
+
+            <ListItem p={1}>
+              Field tests on a local network (Switches, Bridges, Subnetworks..)
+              <br /><br />
+            </ListItem>
+          </UnorderedList>
         </Section>
 
         <Section delay={0.2}>
@@ -175,7 +212,7 @@ const Home = () => (
           </Heading>
 
 
-          <Heading fontSize='20px' color='blue.500'>ESIEE Paris</Heading>
+          <Heading fontSize='20px' color='#36B5FF'>ESIEE Paris</Heading>
           <Heading fontSize='18px' color='white'>- 93162 Noisy-le-Grand, France<br /><br />
           </Heading>
 
@@ -188,7 +225,7 @@ const Home = () => (
 
           <Paragraph>
             Currently in the final year of a 3-year work/study programme leading to an
-            MS in Computer Science & Applications. Alternate periods of full-time study
+            MS in Computer Science & 3D Applications. Alternate periods of full-time study
             with apprenticeship in industry (see Groupe Renault in Employment section).
             <br /><br />
           </Paragraph>
@@ -199,7 +236,7 @@ const Home = () => (
           </Paragraph>
 
 
-          <Heading fontSize='20px' color='blue.500'>Lycée Emily Brontë</Heading>
+          <Heading fontSize='20px' color='#36B5FF'>High School Emily Brontë</Heading>
           <Heading fontSize='18px' color='white'>- 77185 Lognes, France
             <br /><br />
           </Heading>
@@ -216,31 +253,34 @@ const Home = () => (
           <Heading as="h3" variant="section-title" color='turquoise'>
             Interests
           </Heading>
-            <Paragraph>
-              • {' '}<Link href="https://www.youtube.com/channel/UCiD7brqhCib5f2eJ3y_go_w" color='blue.500' target="_blank" _hover={{ textDecoration: "none" }}>
+
+          <UnorderedList m={3} marginLeft={5}>
+            <ListItem p={1}>
+              {' '}<Link href="https://www.youtube.com/channel/UCiD7brqhCib5f2eJ3y_go_w" color='#36B5FF' target="_blank" _hover={{ textDecoration: "none" }}>
               Music Production
-            </Link>
+              </Link>
               &nbsp;(FL Studio)
-              <br />
-            </Paragraph>
-            <Paragraph>
-              • Video Editing (Sony Vegas Pro, After Effect)
-              <br />
-            </Paragraph>
-            <Paragraph>
-              • Video Games (8th League of Legends French Cup - {' '}<Link href="https://liquipedia.net/leagueoflegends/LFL/2022/Coupe_de_France/Qualifier/2" color='blue.500' target="_blank" _hover={{ textDecoration: "none" }}>
+            </ListItem>
+
+            <ListItem p={1}>
+              Video Editing (Sony Vegas Pro, After Effect)
+            </ListItem>
+
+            <ListItem p={1}>
+              Video Games (8th League of Legends French Cup - {' '}<Link href="https://liquipedia.net/leagueoflegends/LFL/2022/Coupe_de_France/Qualifier/2" color='#36B5FF' target="_blank" _hover={{ textDecoration: "none" }}>
               Team Look For Win
-            </Link>
+              </Link>
               )
-              <br />
-            </Paragraph>
-            <Paragraph>
-              • Judo/Jujitsu - {' '}<Link href="http://www.ffjudo.org/extranet/listehautgrades/liste_hauts_grades_dep.asp?Page=1&dis=0&grade=1&ndep=XX1177" color='blue.500' target="_blank" _hover={{ textDecoration: "none" }}>
+            </ListItem>
+
+            <ListItem p={1}>
+              Judo/Jujitsu - {' '}<Link href="http://www.ffjudo.org/extranet/listehautgrades/liste_hauts_grades_dep.asp?Page=1&dis=0&grade=1&ndep=XX1177" color='#36B5FF' target="_blank" _hover={{ textDecoration: "none" }}>
               First Dan Black Belt
-            </Link>
+              </Link>
               &nbsp;(05/22/2016)
               <br /><br />
-            </Paragraph>
+            </ListItem>
+          </UnorderedList>
         </Section>
 
         <Section delay={0.3}>
