@@ -97,14 +97,14 @@ const Home = () => (
           <Paragraph>
             He is also a music producer viewed by over 400k people.
             He publishes his work on his YouTube
-            channel &quot;
+            channel&nbsp;
             <NextLink
                 href="https://www.youtube.com/channel/UCiD7brqhCib5f2eJ3y_go_w"
                 passHref
                 legacyBehavior>
               <Link color='blue.500' target="_blank" _hover={{ textDecoration: "none" }}>Kyto Beats</Link>
             </NextLink>
-            &quot;.
+            .
             <br /><br />
           </Paragraph>
 
