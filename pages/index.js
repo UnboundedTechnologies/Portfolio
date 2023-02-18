@@ -336,7 +336,6 @@ const Home = () => (
                 href="https://fatalis-dashboard.vercel.app/"
                 title="Fatalis Dashboard"
                 thumbnail={fatalis}
-
             >
               A sample dashboard to track, analyze, and display KPIs, metrics, and critical data points
             </GridItem>
