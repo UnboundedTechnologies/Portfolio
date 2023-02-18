@@ -340,6 +340,7 @@ const Home = () => (
             >
               A sample dashboard to track, analyze, and display KPIs, metrics, and critical data points
             </GridItem>
+
           </SimpleGrid>
 
           <Wrap spacing={4} justify='center' my={4}>

@@ -53,7 +53,7 @@ const VoxelDog = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.005 + 4.8
+      const scale = scH * 0.005 + 10
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -74,14 +74,18 @@ const VoxelDog = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/Scene1/scene.gltf', {
+      loadGLTFModel(scene, '/slime/scene.gltf', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
-        scene.scale.set(2, 2, 2),
+        scene.scale.set(5, 5, 5),
         animate()
         setLoading(false)
       })
+
+      const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+      directionalLight.position.set(0, 1, 0);
+      scene.add(directionalLight);
 
       let req = null
       let frame = 0
@@ -94,7 +98,7 @@ const VoxelDog = () => {
           const p = initialCameraPosition
           const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
 
-          camera.position.y = 10
+          camera.position.y = 0
           camera.position.x =
             p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
           camera.position.z =
