@@ -9,9 +9,9 @@ import beat3 from '../public/images/contents/beat-3.jpg'
 import beat4 from '../public/images/contents/beat-4.jpg'
 //import beat5 from '../public/images/contents/beat-5.jpg'
 //import beat6 from '../public/images/contents/beat-6.jpg'
-import beatGodKnows from '../public/images/contents/beatgodknows.jpg'
-import beatSoCorrupt from '../public/images/contents/beatsocorrupt.jpg'
-import beatIntrusive from '../public/images/contents/beatintrusive.jpg'
+import beat7 from '../public/images/contents/beat-7.jpg'
+import beat8 from '../public/images/contents/beat-8.jpg'
+import beat9 from '../public/images/contents/beat-9.jpg'
 
 const Beats = () => (
   <Layout title="Beats">
@@ -25,19 +25,19 @@ const Beats = () => (
 
           <GridItem
               title="Central Cee - God Knows [Music Video] [Prod. @kytobeats]"
-              thumbnail={beatGodKnows}
+              thumbnail={beat7}
               href="https://youtu.be/dwvORhpvJpM"
           />
 
           <GridItem
               title="Central Cee - So Corrupt [Music Video] [Prod. @kytobeats]"
-              thumbnail={beatSoCorrupt}
+              thumbnail={beat8}
               href="https://youtu.be/oKGdBZ4ZmWo"
           />
 
           <GridItem
               title="Central Cee - Intrusive [Music Video] [Prod. @kytobeats]"
-              thumbnail={beatIntrusive}
+              thumbnail={beat9}
               href="https://youtu.be/lr-r4CtQIQU"
           />
 
