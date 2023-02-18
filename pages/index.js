@@ -86,7 +86,7 @@ const Home = () => (
             Saïd is a freelance and full-stack developer based in Paris with a passion for building digital services/products.
             He loves to create and launch products, from planning and designing all the way to solving real-life problems with code.
             <br /><br />
-            During his master’s degree at <BioYear>ESIEE Paris</BioYear>(French computer engineering school), he gained strong programming skills (Java, C/C#/C++, Python)
+            During his master’s degree at <BioYear>ESIEE Paris</BioYear> (French computer engineering school), he gained strong programming skills (Java, C/C#/C++, Python)
             and academic knowledge in cyber-security, cloud computing and machine/deep learning.
             <br /><br />
             Trilingual Arabic-English-French, he is a fast learner and comfortable working in a team and self-directed settings.
