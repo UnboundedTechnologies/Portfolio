@@ -41,7 +41,7 @@ const Work = () => (
           <span>Next.js</span>
         </ListItem>
         <ListItem>
-          <Meta>Payments</Meta>
+          <Meta>Payment</Meta>
           <Link href="https://stripe.com/" target="_blank">
             Stripe.com <ExternalLinkIcon mx="2px" />
           </Link>

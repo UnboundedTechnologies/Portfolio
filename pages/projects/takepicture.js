@@ -17,7 +17,7 @@ const Work = () => (
                 TakePicture <Badge>2023</Badge>
             </Title>
             <P>
-                TakePicture is a powerful tool that allows you to generate a personalized gym card using your webcam or camera
+                TakePicture is a powerful tool that allows you to generate a personalized gym card using your webcam or camera.
             </P>
             <List ml={4} my={4}>
                 <ListItem>
