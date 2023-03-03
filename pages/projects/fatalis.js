@@ -15,7 +15,7 @@ const Work = () => (
   <Layout title="Fatalis Dashboard">
     <Container>
       <Title>
-         Fatalis Dashboard <Badge>2022 - Today</Badge>
+         Fatalis Dashboard <Badge>2021-2022</Badge>
       </Title>
       <P>
         A dashboard to track, analyze, and display KPIs, metrics, and critical data points.

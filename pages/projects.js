@@ -5,6 +5,8 @@ import { WorkGridItem } from '../components/grid-item'
 
 import fatalis from '../public/images/projects/fatalis.png'
 import drip from '../public/images/projects/drip.png'
+import takepicture from '../public/images/projects/takepicture.png'
+import takepicturebackend from '../public/images/projects/takepicturebackend.png'
 
 const Projects = () => (
   <Layout title="Projects">
@@ -15,8 +17,25 @@ const Projects = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
+          <WorkGridItem id="takepicture" title="TakePicture" thumbnail={takepicture}>
+            TakePicture is a powerful tool that allows you to generate a personalized gym card using your webcam or camera
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+              id="takepicturebackend"
+              title="TakePicture Backend"
+              thumbnail={takepicturebackend}
+          >
+            TakePicture&apos;s Backend powered by Strapi.io
+          </WorkGridItem>
+        </Section>
+      </SimpleGrid>
+
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section>
           <WorkGridItem id="fatalis" title="Fatalis Dashboard" thumbnail={fatalis}>
-            A sample dashboard to track, analyze, and display KPIs, metrics, and critical data points.
+            A sample dashboard to track, analyze, and display KPIs, metrics, and critical data points
           </WorkGridItem>
         </Section>
         <Section>
@@ -28,78 +47,7 @@ const Projects = () => (
             An ecommerce platform to buy luxury watches powered by Sanity and Stripe
           </WorkGridItem>
         </Section>
-
-        {/*<Section delay={0.1}>
-          <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
-          >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
-          </WorkGridItem>
-        </Section>*/}
       </SimpleGrid>
-
-      {/*<Section delay={0.2}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Collaborations
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.3}>
-          <WorkGridItem id="margelo" thumbnail={thumbMargelo} title="Margelo">
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.3}>
-          <WorkGridItem
-            id="modetokyo"
-            thumbnail={thumbModeTokyo}
-            title="mode.tokyo"
-          >
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.3}>
-          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>
-
-      <Section delay={0.4}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Old works
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.5}>
-          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.5}>
-          <WorkGridItem
-            id="freedbtagger"
-            thumbnail={thumbFreeDBTagger}
-            title="freeDBTagger"
-          >
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>*/}
     </Container>
   </Layout>
 )

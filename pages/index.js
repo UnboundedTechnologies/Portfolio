@@ -22,7 +22,7 @@ import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin, IoLogoGoogle} from 'reac
 import Image from 'next/image'
 
 import youtube from '../public/images/links/youtube.png'
-import fatalis from '../public/images/projects/fatalis.png'
+import takepicture from '../public/images/projects/takepicture.png'
 import cloud from '../public/images/badges/cloud_engineering.png'
 import data from '../public/images/badges/data_engineering.png'
 import terraform from '../public/images/badges/terraform.png'
@@ -373,11 +373,11 @@ const Home = () => (
             </GridItem>
 
             <GridItem
-                href="https://fatalis-dashboard.vercel.app/"
-                title="Fatalis Dashboard"
-                thumbnail={fatalis}
+                href="https://takepicture.vercel.app/"
+                title="TakePicture"
+                thumbnail={takepicture}
             >
-              A sample dashboard to track, analyze, and display KPIs, metrics, and critical data points
+              Generate your personalized gym card using your webcam or camera
             </GridItem>
 
           </SimpleGrid>
